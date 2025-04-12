@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    transition: transform 0.3s ease; //prépare l'élément <h1> à accepter des transformations avec une animation.
+}
+
+h1:hover {
+    transform: scale(1.1); // quand survolé par la souris il l'augmente de 110%
+}
+
+section {
+    background: white;
+    margin: 20px ;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+.skill-bar {
+    margin: 10px 0;
+}
+
+.progress {
+    background: #ddd;
+    height: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 10px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.fill.html { background: palegoldenrod ; width: 90%; }
+.fill.css { background: paleturquoise; width: 70%; }
+.fill.Cplus{background: palevioletred; width: 100%; }
+.fill.C{background: papayawhip ; width: 65%; }
+.fill.Data-Science{background: peru; width: 80%; }
+.fill.Figma{background: pink; width: 80%; }
+.fill.Python{background: plum; width: 65%; }
+.fill.Matlab{background: powderblue; width: 90%; }
+
+
